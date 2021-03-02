@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="25dp">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Name"
+        android:id="@+id/name"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Location"
+        android:id="@+id/location"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Profession"
+        android:id="@+id/Profession"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:id="@+id/submit"
+        android:onClick="insert"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter name"
+        android:id="@+id/fetchname"/>
+
+    <TextView
+        android:id="@+id/fetchloc"
+        android:layout_width="match_parent"
+        android:layout_height="39dp"
+        android:visibility="gone"
+        android:textSize="20dp"
+        android:textAlignment="textStart"
+        android:gravity="start" />
+    <TextView
+        android:id="@+id/fetchpro"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:visibility="gone"
+        android:textSize="20dp"
+        android:textAlignment="textStart"
+        android:gravity="start" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Location"
+        android:id="@+id/updatelocation"
+        android:visibility="gone"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Profession"
+        android:id="@+id/updateprofession"
+        android:visibility="gone"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/fetchbtn"
+        android:text="Fetch Details"
+        android:onClick="getd"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/updatebtn"
+        android:text="Update"
+        android:visibility="gone"
+        android:onClick="update"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/delbtn"
+        android:text="Delete"
+        android:visibility="gone"
+        android:onClick="del"/>
+
+</LinearLayout>
